@@ -31,7 +31,7 @@ func feeling (mood: mood) -> String {
 
 struct ContentView: View {
     
-    @State var Feel: String = ""
+    @State var Feel: String = "Nothing"
     
     var body: some View {
         VStack {
@@ -47,6 +47,8 @@ struct ContentView: View {
             Spacer()
             
             Text("I feel \(Feel)")
+                .font(.title)
+                .fontWeight(.black)
                 .padding()
             
             HStack {
